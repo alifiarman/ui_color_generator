@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate RGB Color</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container" id="root">
+        <h2>change the body collor by clicking this button</h2>
+        <div class="color_code">
+            <input id="input" type="text" value="rgb(153, 208, 87)" disabled>
+            <button class="copy_btn" id="copy-button" title="Copy to Clipbord">copy</button>
+        </div>
+        <button class="click-btn" id="change_btn">Change Color</button>
+    </div>
+    <div id="tost_msg"></div>
+
+    <div class="over_lay">
+            <div class="msg_wrap">
+                <div class="close">
+                    <img src="assets/close.svg" alt="close">
+                </div>
+                <div class="msg-body">
+                    <img src="assets/success.svg" alt="success">
+                    <h3 id="msg">Successfully Copied!</h3>
+                </div>
+            </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
